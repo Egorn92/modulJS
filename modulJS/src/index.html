@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modulJS</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="content">
+        <div class="header">
+            <a class="logo" href="./index.html">Cursator</a>
+            <nav class="hed-menu">
+                <ul>
+                    <li><a href="">Все курсы</a></li>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Тест на профессию</a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Отзывы</a></li>
+                  
+                </ul>
+            </nav>
+        </div>
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Курсы</a></li>
+                <li><span aria-current="page">Курсы по созданию сайтов</span></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="info">
+        <div class="content">
+            <h1>Курсы по созданию сайтов</h1>
+            <div class="info-menu">
+                 <ul>
+                    <li><a href="">КУРСЫ С ФИЛЬТРАМИ</a></li>
+                    <li><a href="">КУРСЫ СПИСКОМ</a></li>
+                    <li><a href="">БЕСПЛАТНЫЕ КУРСЫ</a></li>
+                    <li><a href="">ВАКАНСИИ</a></li>
+                    <li><a href="">ШКОЛЫ</a></li>
+                 </ul>
+            </div>
+            <p>Сравнивайте лучшие курсы по программированию в различных областях и найдите подходящее предложение. Здесь представлено 241 платных онлайн курсов, которые помогут вам стать грамотными специалистами. А если вы не уверены в выборе профессии, сначала попробуйте бесплатные варианты. Большой выбор обучающих программ по цене, продолжительности, формату, отзывам, условиям рассрочки. Мы поддерживаем информацию о всех курсах проверенных школ в актуальном состоянии.</p>
+        </div>
+    </section>
+    <section class="ad">
+        <div class="content">
+            <div class="ad-content">
+                <h2>Вам важно чтобы курс был в рассрочку?</h2>
+                <div class="ad-button">
+                    <button><a href="">ДА</a></button>
+                    <button><a href="">НЕТ</a></button>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="find">
+        <div class="content">
+            <h3>
+                Курсы с фильтрами
+            </h3>
+            <form>
+                <input type="search" name="q" placeholder="Ключевые слова">
+                <button><a href="">Поиск</a></button>    
+            </form>
+        </div>
+    </section>
+    <section class="filter-blok">
+        <div class="content">
+            <div class="filter">
+                <div class="inputs">
+                    <h4>ЦЕНА</h4>
+                    <div class="input-blok">
+                        <div>
+                            <input id="price_min" class="price_filter" value="" type="text" >
+                            <p>₽</p>
+                        </div>
+                        <div>
+                            <input id="price_max" class="price_filter" value="" type="text">
+                            <p>₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="school">
+                    <h4>ШКОЛА</h4>
+                    <div id="myDropdown">
+                      <div class="checkbox">
+                        <input type="checkbox" class="btn" name="school" value="name-1">
+                        <label for="school">Нетология</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" class="btn" name="school" value="name-2">
+                        <label for="school">Skillbox</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" class="btn" name="school" value="name-3">
+                        <label for="school">Coursera</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" class="btn" name="school" value="name-4">
+                        <label for="school">TeachMeSkills</label>
+                      </div>
+                    </div>
+                </div>
+                <form class="date">
+                    <h4>НАЧАЛО</h4>
+                    <div class="date_filter">
+                        <input name="calendar" placeholder="Выберите дату" type="text"  onfocus="(this.type='date')" max="2022-12-31" min=" "> 
+                        <img src="./img/Union.svg" alt="date" height="24px" width="24px">
+                    </div> 
+                </form>
+                <div class="format">
+                    <h4>ФОРМАТ</h4>
+                    <div id="myDropdown">
+                        <div class="checkbox">
+                            <input type="checkbox" class="btn" name="Online" value="Online">
+                            <label for="Online">Online</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" class="btn" name="Offline" value="Offline">
+                            <label for="Offline">Offline</label>
+                        </div>
+                    </div>
+                </div>
+                <button> <a href="">ФИЛЬТРОВАТЬ</a></button>
+            </div>
+            <div class="card-blok">
+
+                <div class="card">
+                    <img src="./img/image 11.png" alt="card">
+                    <div class="tegs">
+                        <div class="teg"><p>Skillbox</p></div>
+                        <div class="teg">Online</div>
+                    </div>
+                    <div class="abaut-text">
+                        <div class="name"> 
+                            <p class="title">Веб-разработчик</p>
+                            <div>
+                                <img src="./img/star.svg" alt="star">
+                                <p class="star">4.9</p>
+                                <p class="people">(122)</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>Начало: 17.08.2021</p>
+                            <p>Длительность: 8 месяцев</p>
+                            <p>Занятия: 2-3 занятия в неделю</p>
+                            <p>Формат: онлайн-лекции, домашние задания с фидбеком от преподавателей</p>
+                            <p>Особенности: постоянная практика, актуальная программа обучения, чат с одногруппниками. После обучение все студенты проходят стажировку</p>
+                        </div>
+                        <div class="title-price">
+                            <div class="per-curs">
+                                <img src="./img/coin-stack 1.svg" alt="coin-stack">
+                                <p class="price-curs">17 150</p>
+                                <p>₽ / курс</p>
+                            </div>
+                            <div class="per-month">
+                                <p>От</p>
+                                <p class="price-month">2 577</p>
+                                <p>₽/мес</p>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    <button><a href="">Курс на gb.ru</a></button>
+
+                </div>
+                <div class="card">
+                    <img src="./img/image 11.png" alt="card">
+                    <div class="tegs">
+                        <div class="teg"><p>Skillbox</p></div>
+                        <div class="teg">Online</div>
+                    </div>
+                    <div class="abaut-text">
+                        <div class="name"> 
+                            <p class="title">Веб-разработчик</p>
+                            <div>
+                                <img src="./img/star.svg" alt="star">
+                                <p class="star">4.9</p>
+                                <p class="people">(122)</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>Начало: 17.08.2021</p>
+                            <p>Длительность: 8 месяцев</p>
+                            <p>Занятия: 2-3 занятия в неделю</p>
+                            <p>Формат: онлайн-лекции, домашние задания с фидбеком от преподавателей</p>
+                            <p>Особенности: постоянная практика, актуальная программа обучения, чат с одногруппниками. После обучение все студенты проходят стажировку</p>
+                        </div>
+                        <div class="title-price">
+                            <div class="per-curs">
+                                <img src="./img/coin-stack 1.svg" alt="coin-stack">
+                                <p class="price-curs">17 150</p>
+                                <p>₽ / курс</p>
+                            </div>
+                            <div class="per-month">
+                                <p>От</p>
+                                <p class="price-month">2 577</p>
+                                <p>₽/мес</p>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    <button><a href="">Курс на gb.ru</a></button>
+
+                </div>
+                <div class="card">
+                    <img src="./img/image 11.png" alt="card">
+                    <div class="tegs">
+                        <div class="teg"><p>Skillbox</p></div>
+                        <div class="teg">Online</div>
+                    </div>
+                    <div class="abaut-text">
+                        <div class="name"> 
+                            <p class="title">Веб-разработчик</p>
+                            <div>
+                                <img src="./img/star.svg" alt="star">
+                                <p class="star">4.9</p>
+                                <p class="people">(122)</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>Начало: 17.08.2021</p>
+                            <p>Длительность: 8 месяцев</p>
+                            <p>Занятия: 2-3 занятия в неделю</p>
+                            <p>Формат: онлайн-лекции, домашние задания с фидбеком от преподавателей</p>
+                            <p>Особенности: постоянная практика, актуальная программа обучения, чат с одногруппниками. После обучение все студенты проходят стажировку</p>
+                        </div>
+                        <div class="title-price">
+                            <div class="per-curs">
+                                <img src="./img/coin-stack 1.svg" alt="coin-stack">
+                                <p class="price-curs">17 150</p>
+                                <p>₽ / курс</p>
+                            </div>
+                            <div class="per-month">
+                                <p>От</p>
+                                <p class="price-month">2 577</p>
+                                <p>₽/мес</p>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    <button><a href="">Курс на gb.ru</a></button>
+
+                </div>
+                <div class="card">
+                    <img src="./img/image 11.png" alt="card"  width="376px" height="172px">
+                    <div class="tegs">
+                        <div class="teg"><p>Skillbox</p></div>
+                        <div class="teg">Online</div>
+                    </div>
+                    <div class="abaut-text">
+                        <div class="name"> 
+                            <p class="title">Веб-разработчик</p>
+                            <div>
+                                <img src="./img/star.svg" alt="star">
+                                <p class="star">4.9</p>
+                                <p class="people">(122)</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>Начало: 17.08.2021</p>
+                            <p>Длительность: 8 месяцев</p>
+                            <p>Занятия: 2-3 занятия в неделю</p>
+                            <p>Формат: онлайн-лекции, домашние задания с фидбеком от преподавателей</p>
+                            <p>Особенности: постоянная практика, актуальная программа обучения, чат с одногруппниками. После обучение все студенты проходят стажировку</p>
+                        </div>
+                        <div class="title-price">
+                            <div class="per-curs">
+                                <img src="./img/coin-stack 1.svg" alt="coin-stack">
+                                <p class="price-curs">17 150</p>
+                                <p>₽ / курс</p>
+                            </div>
+                            <div class="per-month">
+                                <p>От</p>
+                                <p class="price-month">2 577</p>
+                                <p>₽/мес</p>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    <button><a href="">Курс на gb.ru</a></button>
+
+                </div>
+                
+                
+
+                
+            </div>    
+        </div>
+    </section>
+
+    <section class="freands">
+        <div class="content">
+            <h3> Cписок школ, которые участвуют в категории</h3>
+            <nav>
+                <ul class="freands-content">
+                    <li><a href=""><img src="./img/logo-TMS.svg" alt="TeachMeSkills" height="108px" width="274px" ></a></li>
+                    <li><a href=""><img src="./img/netolog.svg" alt="netolog" height="108px" width="274px" ></a></li>
+                    <li><a href=""><img src="./img/skilbox.svg" alt="Skillbox" height="108px" width="274px" ></a></li>
+                    <li><a href=""><img src="./img/coursera.svg" alt="Cursaera" height="108px" width="274px" ></a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+    </section>
+ 
+    <footer>
+        <div class="content">
+            <div class="footer-content">
+                <a class="logo" href="./index.html">Cursator</a>
+                <nav>
+                    <ul>
+                        <li><a href=""><img src="./img/facebook.svg" alt="facebook"></a></li>
+                        <li><a href=""><img src="./img/ok.svg" alt="ok"></a></li>
+                        <li><a href=""><img src="./img/skype.svg" alt="skype"></a></li>
+                        <li><a href=""><img src="./img/telegramm.svg" alt="telegramm"></a></li>
+                        <li><a href=""><img src="./img/twitter.svg" alt="twitter"></a></li>
+                        <li><a href=""><img src="./img/viber.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/watsapp.svg" alt="watsapp"></a></li>
+                        <li><a href=""><img src="./img/vk.svg" alt="vk"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-info">
+                <nav>
+                    <ul>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Отзывы о школах</a></li>
+                    </ul>
+                </nav>
+                <button>
+                    <p>В начало</p>
+                    <img src="./img/arrou up.svg" alt="up">
+                </button>
+            </div>
+            <div class="line"></div>
+            <div class="footer-sub">
+                <p>© 2021 coursator.online</p>
+                <nav>
+                    <ul>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                        <li><a href="">Пользовательское соглашение</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
