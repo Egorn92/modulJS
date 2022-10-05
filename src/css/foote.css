@@ -1,0 +1,135 @@
+footer {
+    margin-top: 88px;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content   ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.footer-content img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.footer-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+.footer-info  nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.footer-info  ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;    
+}
+
+.footer-info li a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 142.5%;
+    color: #000000;   
+}
+
+.line {
+    margin-top: 32px;
+    width: 100%;
+    height: 1px;
+    background: #D9D9D9;
+}
+
+.footer-info button {
+    margin-top: 108px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.footer-info button p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 142.5%;
+    color: #000000;
+}
+
+.footer-sub {
+    margin: 32px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer-sub p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 142.5%;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-sub ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 44px;
+}
+
+.footer-sub li a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 142.5%;
+    color: #000000;
+}
+

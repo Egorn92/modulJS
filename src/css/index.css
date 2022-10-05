@@ -1,0 +1,110 @@
+@import url(./heder.css);
+@import url(./info.css);
+@import url(./ad.css);
+@import url(./find.css);
+@import url(./filter-blok.css);
+@import url(./freands.css);
+@import url(../css/foote.css);
+@import url(./card.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	text-decoration: none;
+}
+
+.content {
+	position: relative;
+	margin: 0 auto;
+	max-width: calc(1120px + 32px * 2);
+    width: 100%;
+	height: 100%;
+	padding: 0 32px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;  
+
+}
+
+
+.logo {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 68px;
+	color: #000000;
+}
+
+h1 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 68px;
+	text-align: center;
+	color: #000000;  
+}
+
+h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 39px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+h3 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 68px;
+	color: #000000;
+} 
+
+h4 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 142.5%;
+	color: rgba(0, 0, 0, 0.33);
+}
+
+a {
+	font-family: 'Montserrat';
+	font-style: normal;
+
+}
+
+span {
+	font-family: 'Montserrat';
+	font-style: normal;
+}
+
+p {
+	font-family: 'Montserrat';
+	font-style: normal;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+input, textarea {
+	outline: none;
+	border: none;
+}
